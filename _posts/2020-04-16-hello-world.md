@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Golang World!"
-published: false
+published: true
 ---
 
 **Hello world**, this is my first blog post detailing about my golang experiences
