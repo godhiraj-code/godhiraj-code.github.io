@@ -4,7 +4,7 @@ published: true
 ---
 
 
-**[Gopher Conference](https://godhiraj-code.blogspot.com/)
+[Gopher Conference](https://godhiraj-code.blogspot.com/)
 
 
 
