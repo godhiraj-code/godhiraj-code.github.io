@@ -1,0 +1,64 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<h1 style="background-color: white; border-bottom: 1px solid rgb(234, 236, 239); box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; line-height: 1.25; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; margin-top: 0px !important; padding-bottom: 0.3em;">
+AlgorithmsAndDatastructures</h1>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">Algorithms and Data Structures in go - Problems set are from&nbsp;<a href="https://leetcode.com/problemset/all/" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;">leetcode.com</a></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">Hi All, solving problems from leetcode is one way. to test and have fun at the same time while learning about algorithms and data structures. I will keep on updating the blogposts as and when i solve the problems for leetcode.&nbsp; The solutions mentioned here are implemented in golang and are not the efficient solutions.&nbsp;</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">As I will continue to learn more about DS and Algo's , I will revisit the problems and use it to solve in efficient manner.&nbsp;</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">The Problems set are being taken from&nbsp;<a href="https://leetcode.com/problemset/all/" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;">leetcode</a>&nbsp;.</span></div>
+<ol style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px; margin-top: 0px; padding-left: 2em;">
+<li style="box-sizing: border-box;"><a href="https://play.golang.org/p/KtNr9XS6aOT" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"><span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">Maximum consecutive 1's in an array of zeros and ones .</span></a></li>
+</ol>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">-- Given an array of 1's and 0's , We need to find the maximum consecutive's 1 that can be in that array.</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="box-sizing: border-box; font-weight: 600;">My approach</span>&nbsp;:</span><br />
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">a) range over that array and check the value , if value is zero , then assign a counter variable to zero otherwise , increment the counter variable b) then pass that incremented counter variable into a function that will find the no of max consecutive 1</span></div>
+<ol start="2" style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px; margin-top: 0px; padding-left: 2em;">
+<li style="box-sizing: border-box;"><a href="https://play.golang.org/p/KP1Mt-LxcGc" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"><span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">Find Numbers with Even Number of Digits</span></a></li>
+</ol>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">-- Given an array nums of integers, return how many of them contain an even number of digits.</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="box-sizing: border-box; font-weight: 600;">My approach</span>&nbsp;: just divide the number iteratively by 10 to find the no of digits and return it . (need to do it in more efficient way), will come back later.</span></div>
+<ol start="3" style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px; margin-top: 0px; padding-left: 2em;">
+<li style="box-sizing: border-box;"><a href="https://play.golang.org/p/M-jWgNXpW7w" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"><span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">Find squares of a sorted Array</span></a></li>
+</ol>
+<div style="background-color: white; box-sizing: border-box; color: #24292e; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">--Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #24292e;">
+<div style="font-size: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="box-sizing: border-box; font-weight: 600;">My approach</span>&nbsp;: First I range over the array to find the squares and then sorted that array by looping over the slice and comparing the element and then swapping the element in ascending order of their value</span></div>
+<div style="font-size: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><br /></span></div>
+<ol start="4" style="box-sizing: border-box; font-size: 16px; margin-bottom: 16px; margin-top: 0px; padding-left: 2em;">
+<li style="box-sizing: border-box;"><a href="https://play.golang.org/p/Gm5QpvbzceM" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6;"><span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">Duplicate Zeros</span></a></li>
+</ol>
+<div style="box-sizing: border-box; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">--Given a fixed length array array of integers, duplicate each occurrence of zero,</span></div>
+<div style="box-sizing: border-box;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="box-sizing: border-box; font-weight: 600;">My approach</span>&nbsp;: First, I am finding the indexes where 0 is present in the slice and assigning the indexes in a new slice , with the new slice of indexes I got, I loop it through in descending order and shift the elements of the arrays position from the second last element till the index where 0 is present and then assign 0 to the element once the space becomes empty.</span><br />
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><br /></span>
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><br /></span>
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">&nbsp; &nbsp;5.&nbsp;</span><a href="https://play.golang.org/p/wDmZUPNiKFg" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; font-size: 16px;">Merge Sorted Array</a></span><br />
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><br /></span>
+<br />
+<div style="box-sizing: border-box; font-size: 16px; margin-bottom: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">--Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.</span></div>
+<div style="box-sizing: border-box; font-size: 16px;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="box-sizing: border-box; font-weight: 600;">My approach</span>&nbsp;: Merge the arrays nums1 and nums2 into nums1 but before merging , create a temporary slice with m no of elements, so that only the relevant info is being copied from nums1 array to temp array and then sort the slice</span><br />
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><br /></span>
+<br />
+<div style="text-align: left;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">6.&nbsp;</span><a href="https://play.golang.org/p/qqdH2zkPFcz" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6;">Remove element</a></span></div>
+<div style="box-sizing: border-box; margin-bottom: 16px; text-align: left;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;">--Given an array nums and a value val, remove all instances of that value in-place and return the new length.</span></div>
+<div style="box-sizing: border-box; text-align: left;">
+<span style="font-family: &quot;times&quot; , &quot;times new roman&quot; , serif;"><span style="box-sizing: border-box; font-weight: 600;">My approach</span>&nbsp;: Range over the slice, check when the value appears in the slice , if it appears , then append the slice till that index and with index+1 till the end , but do decrement the value of i , if the value appears and if not , increment i</span></div>
+</div>
+</div>
+</div>
+</div>
