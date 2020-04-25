@@ -1,0 +1,112 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<em style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;">&lt;For those who haven't heard about golang &gt;</em><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">If you get time, then please spend some time with&nbsp;golang</span><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">. It's the language that is considered as the 21 st century language by many experts.</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Now the purpose of this blog is to know about the best practices while programming in golang ,and I thought blogging would be a great way to know the mistakes that I am doing while also having a back up that I can refer to anytime.</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">I will recommend the following book - G</span>o in Action by William Kennedy&nbsp;<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;to get started in golang , as it will dive directly into making a rss feeder from the second chapter itself and the language used is simple .</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">So why golang is the hour of need :&nbsp; (Below excerpt from the book written by Sir Kennedy [GoinAction]</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">"Earlier days , we had single core and thus the programming was done keeping in mind with single core.</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Nowadays things have changed . we have multi cores and lots of servers have two digits cores in them. "</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Even the style or the way we used to code has changed.</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Projects are broken down into modules and are assigned to each of the team members in different locations .</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Libraries / Packages comes to the rescue . As they say "Don't reinvent the wheel" . what I am talking about here is&nbsp;</span><strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;">code reuse</strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;. I can use the libraries created by any other developer in my module and use it's feature.</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Go is a programming language created by&nbsp;Sir R</span>ob Pike<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;,&nbsp;Sir R</span>obert Griesmer<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;,&nbsp;Sir Ken Thompson&nbsp;</span><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">at Google .</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Some experts says that it gives the developer both the&nbsp;</span><em style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"><strong>performance</strong></em><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;and&nbsp;</span><em style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"><strong>to develop rapidly.</strong></em><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;So it's&nbsp;</span><strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;">Rapid Development AND Performance</strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">&nbsp;rather than&nbsp;</span><strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;">Rapid Development OR Performance</strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">.</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">And if you don't have much time to learn about the basics of a new language , So here is&nbsp;</span><a href="https://gobyexample.com/">https://gobyexample.com/</a>&nbsp;<a data-source="user" href="https://knome.ultimatix.net/r?url=https%3A%2F%2Fgobyexample.com%2F" rel="nofollow" style="background-color: white; color: #4372b9; font-family: myriad-pro, sans-serif; font-size: 17px; overflow-wrap: break-word; text-decoration-line: none;">&nbsp;</a><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">where one can get the feel of the syntax of this language in 40 minutes or so. and effective go .</span><br />
+<br />
+<br />
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;">Development Environment that I am thinking to use as of now.&nbsp;</strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">(subject to change)</span><strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;">&nbsp;.</strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">os: Ubuntu (LTS)</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Golang : 1.12</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">App Engine : Google</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Nginx</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">MySQL</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Redis</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Couchbase</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Apache Jmeter</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">IDE : vim ( )</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">gorilla mux</span><br />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">for client side : html, javascript, jquery , angular js ( will load it dynamically through google CDN)</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Run the app in a container and deploying with Docker at last .</span><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"><br /></strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">While , doing routing , I came across three libraries :</span><br />
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"><em>1) standard library<br />2)gorilla/mux<br />3)drone.io/routes</em></strong><br />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Sharing an example of the mux and routes below :</span><br />
+<br />
+<pre style="background: rgb(51, 51, 51); border-radius: 0px; border: 1px solid rgba(0, 0, 0, 0.15); color: white; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; line-height: 21px; margin-bottom: 25px; margin-top: 10.5px; max-width: 800px; overflow-wrap: break-word; overflow-x: auto; padding: 20px; white-space: pre-wrap; word-break: break-all;">//Gorillamux
+//HelloHandler for routing the upcoming requests
+func HelloHandler(w http.ResponseWriter, r *http.Request) {
+        urlParams := mux.Vars(r)
+        val := urlParams["user"]
+        hellomessage := "Hello " + val
+        message := MyStruct{hellomessage}
+        data, err := json.Marshal(message)
+        if err != nil {
+                fmt.Println("some error while marshaling: ", err)
+        }
+        fmt.Fprintf(w, string(data))
+}
+func main() {
+        gr := mux.NewRouter()
+        gr.HandleFunc("/url/{user:[0-9]+}", HelloHandler)
+        http.Handle("/", gr)
+        log.Fatalln(http.ListenAndServe(":8080", nil))
+}
+</pre>
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"><br /></strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;"></span>
+<br />
+<pre style="background: rgb(51, 51, 51); border-radius: 0px; border: 1px solid rgba(0, 0, 0, 0.15); color: white; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; line-height: 21px; margin-bottom: 25px; margin-top: 10.5px; max-width: 800px; overflow-wrap: break-word; overflow-x: auto; padding: 20px; white-space: pre-wrap; word-break: break-all;">&lt;strong&gt;//drone/routes&lt;br&gt;&lt;/strong&gt;func HelloHandlerr(w http.ResponseWriter, r *http.Request) {
+          urlParams := r.URL.Query()
+          name := urlParams.Get(":name")
+          hellomessage := "Hello " + name
+          message := MyStruct{hellomessage}
+          data, err := json.Marshal(message)
+          if err != nil {
+                  fmt.Println("some error while marshaling: ", err)
+          }
+          fmt.Fprintf(w, string(data))
+  }
+&gt;&gt;func main() {
+          drn := routes.New()
+          drn.Get("/url/:name", HelloHandlerr)
+          http.Handle("/", drn)
+          log.Fatalln(http.ListenAndServe(":8080", nil))
+  &lt;strong&gt;
+&lt;/strong&gt;
+</pre>
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"></strong><br style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;" />
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"></strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;">Sharing my .vimrc file , what can be added or remove to have more better experience .</span><br />
+<strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"><br /></strong><span style="background-color: white; color: #6c6c6c; font-family: , sans-serif; font-size: 17px;"></span><strong style="background-color: white; color: #6c6c6c; font-family: myriad-pro, sans-serif; font-size: 17px;"></strong>
+<br />
+<pre style="-webkit-text-stroke-width: 0px; background: rgb(51, 51, 51); border-radius: 0px; border: 1px solid rgba(0, 0, 0, 0.15); color: white; display: block; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 15px; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: 300; letter-spacing: normal; line-height: 21px; margin: 10.5px 0px 25px; max-width: 800px; orphans: 2; overflow-wrap: break-word; overflow-x: auto; padding: 20px; text-align: start; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-break: break-all; word-spacing: 0px;">&lt;strong&gt;
+&lt;/strong&gt;
+set shell=bash
+let mapleader=","
+execute pathogen#infect()
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+autocmd BufWritePre * :%s/\s\+$//e
+set viminfo='100,\"2500,:200,%,n~/.viminfo
+ let g:go_fmt_command = "goimports"
+ let g:go_highlight_functions = 1
+ let g:go_highlight_methods = 1
+ let g:go_highlight_structs = 1
+ let g:go_highlight_operators = 1
+ let g:go_highlight_build_constraints = 1
+ let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+"  Open go doc in vertical window, horizontal, or tab
+ au Filetype go nnoremap &lt;leader&gt;v :vsp &lt;CR&gt;:exe "GoDef" &lt;CR&gt;
+ au Filetype go nnoremap &lt;leader&gt;s :sp &lt;CR&gt;:exe "GoDef"&lt;CR&gt;
+ au Filetype go nnoremap &lt;leader&gt;t :tab split &lt;CR&gt;:exe "GoDef"&lt;CR&gt;&lt;strong&gt;
+&lt;/strong&gt;
+</pre>
+</div>
