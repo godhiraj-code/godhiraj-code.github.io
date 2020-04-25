@@ -3,6 +3,18 @@
   var myLandbot = new LandbotLivechat({
     index: 'https://landbot.io/u/H-452470-Q6TQDU5VSIX0RKCW/index.html',
   });
+</script><script>
+  // Show a proactive message on landbot load
+  myLandbot.on('landbot-load', function() {
+    myLandbot.sendProactive({
+  "message": "Hello there!!",
+  "author": "Gopher says ",
+  "avatar": "https://media2.giphy.com/media/F0uUtL7lmALCM/giphy.gif",
+  "extra": {
+    "hide_textbox": true
+  }
+});
+  });
 </script>
 </body>
 </html>
