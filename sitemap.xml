@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://dhirajdas.dev/</loc>
+  <lastmod>2020-04-25T15:58:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dhirajdas.dev/2020/04/20/forthosewhohaven'theardaboutgolang/</loc>
+  <lastmod>2020-04-25T15:58:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dhirajdas.dev/2020/04/19/Go-In-Action-Book-Review/</loc>
+  <lastmod>2020-04-25T15:58:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dhirajdas.dev/2020/04/18/LeetCodeinGolang/</loc>
+  <lastmod>2020-04-25T15:58:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dhirajdas.dev/2020/04/16/Welcome-to-Golang-World/</loc>
+  <lastmod>2020-04-25T15:58:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dhirajdas.dev/2020/04/15/GopherConference2016-India/</loc>
+  <lastmod>2020-04-25T15:58:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
